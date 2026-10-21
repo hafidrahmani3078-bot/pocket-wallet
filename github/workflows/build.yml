@@ -31,10 +31,13 @@ jobs:
         pip install --upgrade pip
         pip install --user Cython==0.29.36 buildozer
 
-    - name: Accept Android Licenses and Build
+    - name: Build with Buildozer
+      env:
+        # السماح بقبول التراخيص تلقائياً من خلال المتغيرات البيئية
+        BUILDER_ACCEPT_LICENSES: "1"
       run: |
         export PATH=$PATH:~/.local/bin
-        # قبول تراخيص أندرويد تلقائياً قبل بناء التطبيق
+        # استخدام yes لضمان قبول التراخيص التفاعلية
         yes | buildozer -v android debug
 
     - name: Upload APK Artifact
