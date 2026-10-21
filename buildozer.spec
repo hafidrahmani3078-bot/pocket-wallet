@@ -42,6 +42,9 @@ android.api = 33
 # (int) Minimum API your APK will support.
 android.minapi = 21
 
+# (str) Explicitly set build tools version
+android.build_tools_version = 33.0.0
+
 [buildozer]
 
 # (int) Log level (0 = error, 1 = info, 2 = debug)
