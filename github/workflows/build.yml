@@ -34,7 +34,7 @@ jobs:
     - name: Build with Buildozer
       run: |
         export PATH=$PATH:~/.local/bin
-        # هذا الأمر يقوم بالموافقة التلقائية على تراخيص أندرويد لكي لا يتوقف البناء
+        # أمر يضمن قبول تراخيص SDK وإجبار البناء على الاستمرار
         yes | buildozer -v android debug
 
     - name: Upload APK Artifact
