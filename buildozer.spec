@@ -31,9 +31,6 @@ orientation = portrait
 # (list) The permissions for your application
 android.permissions = INTERNET
 
-# (str) Supported orientations (portrait, landscape or all)
-orientation = portrait
-
 # (bool) Indicate if the application should be fullscreen or not
 fullscreen = 0
 
