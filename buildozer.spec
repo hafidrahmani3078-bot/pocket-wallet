@@ -9,7 +9,7 @@ package.name = portefeuille
 # (str) Package domain (needed for android packaging)
 package.domain = org.wallet
 
-# (str) Source code where the main.py live
+# (str) Source code where the main.py lives
 source.dir = .
 
 # (str) Application versioning
@@ -41,6 +41,12 @@ android.api = 33
 
 # (int) Minimum API your APK will support.
 android.minapi = 21
+
+# (str) Android SDK version to use
+android.sdk = 33
+
+# (str) Android NDK version to use
+android.ndk = 25b
 
 [buildozer]
 
